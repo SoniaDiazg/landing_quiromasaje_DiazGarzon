@@ -94,6 +94,13 @@
             color: #546277;
         }
 
+            /*animaciones nav*/
+
+            a:hover{
+                background-color: #546277;
+                color: #ffffff;
+            }
+
     /*Fin barra navegación*/
 
     /*Sobre mi*/
