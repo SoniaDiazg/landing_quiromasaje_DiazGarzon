@@ -43,6 +43,8 @@
             flex-direction: column;
             height: 100%;
             width: 50%;
+            -webkit-animation: slide-in-blurred-right 2s ;
+                    animation: slide-in-blurred-right 2s ;
         }
 
 
@@ -66,6 +68,28 @@
             left: 84px;
         }
 
+        @keyframes slide-in-blurred-right {
+            0% {
+              -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+                      transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              -webkit-transform-origin: 0% 50%;
+                      transform-origin: 0% 50%;
+              -webkit-filter: blur(40px);
+                      filter: blur(40px);
+              opacity: 0;
+            }
+            
+            100% {
+              -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+                      transform: translateX(0) scaleY(1) scaleX(1);
+              -webkit-transform-origin: 50% 50%;
+                      transform-origin: 50% 50%;
+              -webkit-filter: blur(0);
+                      filter: blur(0);
+              opacity: 1;
+            }
+        }
+          
     /*Fin header*/
 
     /*Barra navegación*/
@@ -121,7 +145,7 @@
         .about-me{
             display: flex;
             height: 626px;
-            padding-top: 80px;
+            padding-top: 147px;
         }
 
         .aboutme-oval{
@@ -199,7 +223,7 @@
         .traitment-title{
             font-family: 'Bellota Text';
             color: #ffffff;
-            padding: 50px 0px 20px 0px;
+            padding: 70px 0px 20px 0px;
         }
 
         .traitment-card{
@@ -242,7 +266,8 @@
             .prices-title{
                 font-family: 'Bellota Text';
                 color:#546277;
-                text-align: center;          
+                text-align: center; 
+                padding-top: 70px;         
             }
 
             .div-prices ul{
@@ -306,7 +331,7 @@
                 color:#ffffff;
                 text-align: center;
                 margin-top: 20px;
-                padding-top: 20px;
+                padding-top: 70px;
             }
 
             .date p{
@@ -347,6 +372,10 @@
             align-items: flex-start;
             flex-direction: column;
             margin-right: 20px;
+        }
+
+        .contact-details li a:hover{
+            text-decoration: underline;
         }
 
         .contact-details li{
