@@ -96,10 +96,10 @@
 
             /*animaciones nav*/
 
-            a:hover{
+            /* a:hover{
                 background-color: #546277;
                 color: #ffffff;
-            }
+            } */
 
     /*Fin barra navegación*/
 
@@ -344,9 +344,29 @@
             list-style: none;
         }
 
+        .contact-nav .nav-li {
+            display: flex;
+            justify-content: flex-end;
+            height: 0;
+            width: calc(100% + 1px);
+            background: #546277;
+            transition: .3s;
+        }
+
+        .contact-nav li:hover .nav-li {
+            height: 21px;
+        }
+
         .contact-nav li{
             margin-right: 10px;
             margin-left: 10px;
+        }
+
+        .contact-nav a {
+            background: white;
+            height: 20px;
+            margin-top: -0.1px;
+            margin-right: -0.4px;
         }
 
         .copy{
