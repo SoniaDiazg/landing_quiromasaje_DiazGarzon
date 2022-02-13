@@ -209,6 +209,12 @@
             background-color: #ffffff;
             border-radius: 80px;
             display: inline-block;
+            transition: all .5s;
+        }
+
+        .traitment-card:hover{
+            transform: scale(1.05);
+            box-shadow: 4px 4px 30px rgba(0,0,0, .45);
         }
 
         .traitment-card img{
